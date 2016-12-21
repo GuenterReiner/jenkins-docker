@@ -1,4 +1,4 @@
-FROM jenkins:2.19.1-alpine
+FROM jenkins:2.19.4
 
 USER root
 RUN apk add --no-cache nodejs
