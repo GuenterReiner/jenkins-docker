@@ -1,8 +1,8 @@
-FROM jenkins:2.19.1
+FROM jenkins:2.19.4
 
 USER root
-RUN apk add --no-cache nodejs
-RUN apk add --no-cache python
+RUN apt-get install nodejs
+RUN apt-get install python
 USER jenkins
 
 COPY plugins.txt /usr/share/jenkins/plugins.txt
