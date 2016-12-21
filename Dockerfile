@@ -1,7 +1,7 @@
 FROM jenkins:2.19.4
 
 USER root
-RUN curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
+RUN curl -sL https://deb.nodesource.com/setup_6.x | bash -
 RUN apt-get install nodejs
 RUN apt-get install python
 USER jenkins
